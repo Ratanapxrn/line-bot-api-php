@@ -21,7 +21,9 @@ if ( sizeof($request_array['events']) > 0 )
    if( $event['message']['type'] == 'text' )
    {
 		$text = $event['message']['text'];
-		
+		if($text == "เธอชื่อไรหรอจ๊ะ" ||$text == "ชื่อ"||$text == "ชื่ออะไร"||$text == "ชื่ออะไรครับ"||$text == "ชื่ออะไรคะ"||$text == "name"||$text == "What your name?"){
+			$reply_message = 'เราชื่อว่า บิต เขียนเป็นภาษาอังกฤษได้ว่า Bitt ʕ•ᴥ•ʔ';
+		}
 		$reply_message = '('.$text.') ได้รับข้อความเรียบร้อย!!';   
    }
    else
