@@ -20,9 +20,10 @@ if ( sizeof($request_array['events']) > 0 )
    
    if( $event['message']['type'] == 'text' )
    {
-		$text = $event['message']['text'];
+		$text = $event['message']['text']['text'];
 	   	if($text == "สวัสดี" ||$text == "ไง"||$text == "หวัดดี"){
-			$reply_message = 'สวัสดีนะค้าบ ʕ•ᴥ•ʔ'.'มีอะไรให้น้องตะวินช่วยไหมครับ';
+			$reply_message = 'สวัสดีนะค้าบ ʕ•ᴥ•ʔ'
+			$reply_message = 'มีอะไรให้น้องตะวินช่วยไหมครับ';
 		}
 	   	if($text == "อันยอง"||$text == "อันยองฮาเซโย"){
 			$reply_message = 'อันยองค้าบ ʕ•ᴥ•ʔ';
