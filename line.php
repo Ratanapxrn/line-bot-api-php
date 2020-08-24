@@ -20,18 +20,15 @@ if ( sizeof($request_array['events']) > 0 )
    
    if( $event['message']['type'] == 'text' )
    {
-		$text = $event['message']['text']['text'];
+		$text = $event['message']['text'];
 	   	if($text == "สวัสดี" ||$text == "ไง"||$text == "หวัดดี"){
 			$reply_message = 'สวัสดีนะค้าบ ʕ•ᴥ•ʔ'
-			$reply_message = 'มีอะไรให้น้องตะวินช่วยไหมครับ';
 		}
 	   	if($text == "อันยอง"||$text == "อันยองฮาเซโย"){
 			$reply_message = 'อันยองค้าบ ʕ•ᴥ•ʔ';
-			$reply_message = 'มีอะไรให้น้องตะวินช่วยไหมครับ';
 		}
 	   	if($text == "Hi"||$text == "Hello"){
 			$reply_message = 'Hello ʕ•ᴥ•ʔ';
-			$reply_message = 'Can i help you?';
 		}
 		if($text == "เธอชื่อไรหรอจ๊ะ" ||$text == "ชื่อ"||$text == "ชื่ออะไร"||$text == "ชื่ออะไรครับ"||$text == "ชื่ออะไรคะ"||$text == "name"||$text == "What your name?"||$text == "หนูชื่ออะไรครับ"||$text == "หนูชื่ออะไรค่ะ"||$text == "หนูชื่ออะไร"||$text == "หนูชื่อไร"){
 			$reply_message = 'เราชื่อว่า ตะวินครับ เขียนเป็นภาษาอังกฤษได้ว่า Tawin ୧ʕ•̀ᴥ•́ʔ୨';
