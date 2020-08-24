@@ -22,7 +22,7 @@ if ( sizeof($request_array['events']) > 0 )
    {
 		$text = $event['message']['text'];
 	   	if($text == "สวัสดี" ||$text == "ไง"||$text == "หวัดดี"){
-			$reply_message = 'สวัสดีนะค้าบ ʕ•ᴥ•ʔ'
+			$reply_message = 'สวัสดีนะค้าบ ʕ•ᴥ•ʔ';
 		}
 	   	if($text == "อันยอง"||$text == "อันยองฮาเซโย"){
 			$reply_message = 'อันยองค้าบ ʕ•ᴥ•ʔ';
@@ -30,7 +30,7 @@ if ( sizeof($request_array['events']) > 0 )
 	   	if($text == "Hi"||$text == "Hello"){
 			$reply_message = 'Hello ʕ•ᴥ•ʔ';
 		}
-		if($text == "เธอชื่อไรหรอจ๊ะ" ||$text == "ชื่อ"||$text == "ชื่ออะไร"||$text == "ชื่ออะไรครับ"||$text == "ชื่ออะไรคะ"||$text == "name"||$text == "What your name?"||$text == "หนูชื่ออะไรครับ"||$text == "หนูชื่ออะไรค่ะ"||$text == "หนูชื่ออะไร"||$text == "หนูชื่อไร"){
+		if($text == "เธอชื่อไรหรอจ๊ะ" ||$text == "ชื่อ"||$text == "ชื่ออะไร"||$text == "ชื่ออะไรครับ"||$text == "ชื่ออะไรคะ"||$text == "name"||$text == "What your name?"||$text == "หนูชื่ออะไรครับ"||$text == "หนูชื่ออะไรค่ะ"||$text == "หนูชื่ออะไร"){
 			$reply_message = 'เราชื่อว่า ตะวินครับ เขียนเป็นภาษาอังกฤษได้ว่า Tawin ୧ʕ•̀ᴥ•́ʔ୨';
 		}
 	   	if($text == "ใครคือผู้พัฒนาบอท" ||$text == "ชื่อของเจ้าของ"||$text == "คนสร้างบอท"||$text == "ใครเป็นคนทำ"||$text == "ชื่อผู้พัฒนาบอท"){
