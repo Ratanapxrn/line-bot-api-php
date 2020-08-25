@@ -52,7 +52,7 @@ if ( sizeof($request_array['events']) > 0 )
 			$reply_message = 'วันจันทร์ที่ 27 ธันวาคม พ.ศ.2542 ครับ';
 		}
 	   	if($text == "ขนาดเท้า" ||$text == "ขนาดรองเท้า"||$text == "ขอขนาดรองเท้า"||$text == "ไซส์รองเท้า"){
-			$reply_message = 'วันจันทร์ที่ 27 ธันวาคม พ.ศ.2542 ครับ';
+			$reply_message = '40 ครับ';
 		}
 	        if($text == "สถานการณ์โควิดวันนี้" || $text == "covid19" || $text == "covid-19" || $text == "Covid-19"){
                  $url = 'https://covid19.th-stat.com/api/open/today';
