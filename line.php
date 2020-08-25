@@ -48,6 +48,12 @@ if ( sizeof($request_array['events']) > 0 )
 	 	if($text == "CDMA"){
 			$reply_message = '1,-3,-1,-1 ครับ';
 		}
+	   	if($text == "วันเกิด" ||$text == "เกิดวันที่เท่าไร"||$text == "ขอวันเกิดหน่อยบอท"||$text == "ฉันต้องการทราบวันเกิด"){
+			$reply_message = 'วันจันทร์ที่ 27 ธันวาคม พ.ศ.2542 ครับ';
+		}
+	   	if($text == "ขนาดเท้า" ||$text == "ขนาดรองเท้า"||$text == "ขอขนาดรองเท้า"||$text == "ไซส์รองเท้า"){
+			$reply_message = 'วันจันทร์ที่ 27 ธันวาคม พ.ศ.2542 ครับ';
+		}
 	        if($text == "สถานการณ์โควิดวันนี้" || $text == "covid19" || $text == "covid-19" || $text == "Covid-19"){
                  $url = 'https://covid19.th-stat.com/api/open/today';
                  $ch = curl_init($url);
