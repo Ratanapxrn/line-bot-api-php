@@ -45,7 +45,9 @@ if ( sizeof($request_array['events']) > 0 )
 	   	if($text == "ขอทราบส่วนสูงหน่อยบอท" ||$text == "ส่วนสูงเท่าไร"||$text == "ส่วนสูง"||$text == "ฉันต้องการทราบส่วนสูง"||$text == "ขอส่วนสูงหน่อยบอท"){
 			$reply_message = 'ส่วนสูง 165 เซนติเมตรครับ';
 		}
-	   	
+	 	if($text == "CDMA"){
+			$reply_message = '1,-3,-1,-1 ครับ';
+		}
 	        if($text == "สถานการณ์โควิดวันนี้" || $text == "covid19" || $text == "covid-19" || $text == "Covid-19"){
                  $url = 'https://covid19.th-stat.com/api/open/today';
                  $ch = curl_init($url);
