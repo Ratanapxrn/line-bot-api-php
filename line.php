@@ -52,7 +52,7 @@ if ( sizeof($request_array['events']) > 0 )
 			$reply_message = 'วันจันทร์ที่ 27 ธันวาคม พ.ศ.2542 ครับ';
 		}
 	   	if($text == "ขนาดเท้า" ||$text == "ขนาดรองเท้า"||$text == "ขอขนาดรองเท้า"||$text == "ไซส์รองเท้า"){
-			$reply_message = '40 ครับ';
+			$reply_message = 'ความยาว 9.8 นิ้ว ความกว้าง 3.9 นิ้ว ครับ';
 		}
 	        if($text == "สถานการณ์โควิดวันนี้" || $text == "covid19" || $text == "covid-19" || $text == "Covid-19"){
                  $url = 'https://covid19.th-stat.com/api/open/today';
@@ -71,7 +71,7 @@ if ( sizeof($request_array['events']) > 0 )
                  $reply_message = 'ติดเชื้อสะสม '. $obj->{'Confirmed'}.' คน'.'รักษาหายแล้ว '. $obj->{'Recovered'}.' คน';
                 }
 	   
-	    	$str_msg = explode(" ", $text);
+	    /*	$str_msg = explode(" ", $text);
 	   	if($str_msg[0] == "@บอท"){
 		   $curl = curl_init();
 
@@ -108,7 +108,7 @@ if ($err) {
 	echo $response;
 	 $reply_message = $response;
 	
-}
+}*/
 		   
 	   }
 	//$reply_message = '('.$text.') ได้รับข้อความเรียบร้อย!!';   	   	   	
