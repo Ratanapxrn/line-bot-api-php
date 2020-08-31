@@ -111,9 +111,9 @@ if ($err) {
 	echo $response;
 	 $reply_message = $response;
 	
-}*/
+}
 		   
-	   }
+	   }*/
 	//$reply_message = '('.$text.') ได้รับข้อความเรียบร้อย!!';   	   	   	
    }
    else
