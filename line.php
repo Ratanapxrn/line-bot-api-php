@@ -24,6 +24,9 @@ if ( sizeof($request_array['events']) > 0 )
 	   	if($text == "สวัสดี" ||$text == "ไง"||$text == "หวัดดี"){
 			$reply_message = 'สวัสดีนะค้าบ ʕ•ᴥ•ʔ';
 		}
+	   	if($text == "ตะวิน" ||$text == "น้องตะวิน"||$text == "Tawin"){
+			$reply_message = 'ค้าบ มีอะไรให้ตะวินรับใช้หรอค้าบ ʕ•ᴥ•ʔ';
+		}
 	   	if($text == "อันยอง"||$text == "อันยองฮาเซโย"){
 			$reply_message = 'อันยองค้าบ ʕ•ᴥ•ʔ';
 		}
